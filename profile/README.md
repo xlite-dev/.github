@@ -13,10 +13,10 @@
         <img src="https://img.shields.io/badge/🛠lite.ai.toolkit-blue.svg" >
      </p>
      <p> 
-        🛠 Repositories: <a href="https://github.com/xlite-dev/lite.ai.toolkit" > lite.ai.toolkit </a> |  <a href="https://github.com/xlite-dev/LLM-Infra" > LLM-Infra </a> | <a href="https://github.com/xlite-dev/LeetCUDA" > LeetCUDA </a> | <a href="https://github.com/xlite-dev/ffpa-attn" > ffpa-attn </a> 🎧
+        🛠 Repositories: <a href="https://github.com/xlite-dev/lite.ai.toolkit" > lite.ai.toolkit </a> |  <a href="https://github.com/xlite-dev/Awesome-LLM-Inference" > Awesome-LLM-Inference </a> | <a href="https://github.com/xlite-dev/LeetCUDA" > LeetCUDA </a> | <a href="https://github.com/xlite-dev/ffpa-attn" > ffpa-attn </a> 🎧
      </p>
      <p> 
-        🛠 <a href="https://github.com/xlite-dev/HGEMM" > HGEMM </a> | <a href="https://github.com/xlite-dev/DiT-Infra" > DiT-Infra </a> | <a href="https://github.com/xlite-dev/lihang-notes" > lihang-notes(PDF, 200 Pages) </a> | <a href="https://github.com/xlite-dev/torchlm" > torchlm </a> 🎧
+        🛠 <a href="https://github.com/xlite-dev/HGEMM" > HGEMM </a> | <a href="https://github.com/xlite-dev/Awesome-DiT-Inference" > Awesome-DiT-Inference </a> | <a href="https://github.com/xlite-dev/lihang-notes" > lihang-notes(PDF, 200 Pages) </a> | <a href="https://github.com/xlite-dev/torchlm" > torchlm </a> 🎧
      </p>
      <p>
         🤖 Contact: <a href="https://github.com/DefTruth"> qyjdef@163.com </a> | <a href="https://github.com/DefTruth" > GitHub: DefTruth </a>  | <a href="https://www.zhihu.com/people/qyjdef"> 知乎: DefTruth </a> 📞
