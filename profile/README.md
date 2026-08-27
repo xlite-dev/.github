@@ -1,10 +1,10 @@
-## Latest News
-
-- [2026-08] 🐍 [**Cache-DiT x FFPA (FP8/FP4)**](#end-to-end-inference) is ready! Feel free to take a try for your Diffusion models. 🎉🎉
-- [2026-08] 🚪 FFPA now experimental supports [**FP4 Attention**](https://github.com/xlite-dev/ffpa-attn) for headdims **[64,1024]** ([sm_120](https://github.com/xlite-dev/ffpa-attn), forward only), achieving **850-980**🎉 TOPS (D=128-256) on NVIDIA RTX 5090, **3.8x~4.4x**🎉 speedup over PyTorch SDPA (FlashAttention-2 backend), the performance of large headdims is stay tuned for updates. 🎉🎉
-- [2026-08] 🦅 FFPA now supports D=512 for NVIDIA B200 via [**CuTe-DSL**](https://github.com/xlite-dev/ffpa-attn) **tcgen05** 2-CTA, [**1517**](https://github.com/xlite-dev/ffpa-attn) TFLOPS forward and [**763**](https://github.com/xlite-dev/ffpa-attn) TFLOPS backward, achieving **6x~15x**🎉 speedup over standard PyTorch SDPA. 🎉🎉
-- [2026-07] 🎯 FFPA now supports [**FP8 Attention**](https://github.com/xlite-dev/ffpa-attn) for headdims **[64,1024]** ([sm_120](https://github.com/xlite-dev/ffpa-attn), forward only) and achieving **3x~6x**🎉 speedup over PyTorch SDPA for large headdim (**D>256**). 🎉🎉
-- [2026-06] FFPA now supports **AMD ROCm/HIP GPUs** via the TritonBackend, check [#268](https://github.com/xlite-dev/ffpa-attn/pull/268) for more details. 🎉
-- [2026-06] 🦅 [**NVIDIA-Nemo/AutoModel x FFPA**](https://github.com/NVIDIA-NeMo/Automodel/pull/2436) achieving [**1.4x~1.5x**🎉](https://github.com/NVIDIA-NeMo/Automodel/pull/2436) End2End training throughput speedup for Gemma4-31B (8xH200, FSDP2 + AC) with **FFPA** accelerating the **10/60 (D=512)** full-attention layers. 🎉🎉
-- [2026-06] 🐍 FFPA now supports [**TritonBackend**](https://github.com/xlite-dev/ffpa-attn) and [**CuTeDSLBacked**](https://github.com/xlite-dev/ffpa-attn) for both forward and backward pass, achieving **1.5x~5x**🎉 speedup over standard PyTorch SDPA across many devices. 🎉🎉
-- [2026-05] 🚪 FFPA now supports GQA, MQA, cross-attn, causal, attn-mask and dropout with [**CUDABackend**](https://github.com/xlite-dev/ffpa-attn) for large headdims (**D>256**, forward only), achieving **1.3x~2x**🎉 speedup over PyTorch SDPA. 🎉🎉
+Please check out our production-ready **Kernel Library**: [**ffpa-attn**](https://github.com/xlite-dev/ffpa-attn) - Fast and Memory-Efficient Exact Attention (**BF16/FP16/FP8/FP4**) for Large Headdim, **1.5x~15x**🔥🔥 speedup over standard PyTorch SDPA. 
+<div align='center'>
+  <img src='https://github.com/xlite-dev/ffpa-attn/raw/main/docs/assets/perf/ffpa_speedup_cutedsl_nvidia-h20z_B1_H32_N8192_D512_T.png' width='200px'>
+  <img src='https://github.com/xlite-dev/ffpa-attn/raw/main/docs/assets/perf/ffpa_speedup_cutedsl_nvidia-h20z_B1_H32_N16384_D512_T.png' width='200px'>
+  <img src='https://github.com/xlite-dev/ffpa-attn/raw/main/docs/assets/perf/ffpa_speedup_cutedsl_nvidia-b200_B1_H32_N8192_D512_T.png' width='200px'>
+  <img src='https://github.com/xlite-dev/ffpa-attn/raw/main/docs/assets/perf/ffpa_speedup_cutedsl_nvidia-b200_B1_H32_N16384_D512_T.png' width='200px'><br>
+  <p><i><b>BF16 Attention</b> for Large Headdim: FFPA vs SDPA (FWD/BWD) across NVIDIA H200 and B200, 6x-15x↑. </i></p>
+  <img src="https://github.com/user-attachments/assets/1ec7d63f-711b-479d-b352-7ac7b7bff5a8" width='815px'/><br>
+  <p><i><b>FP4 Attention</b> for D=128: FFPA vs SageAttention-3 (FWD) on NVIDIA RTX PRO 6000. </i></p>
+</div>
